@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				grademate: {
+					navy: 'hsl(var(--grademate-navy))',
+					cyan: 'hsl(var(--grademate-cyan))',
+					'cyan-glow': 'hsl(var(--grademate-cyan-glow))',
+					text: 'hsl(var(--grademate-text))',
+					'text-muted': 'hsl(var(--grademate-text-muted))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
