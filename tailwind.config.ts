@@ -56,6 +56,7 @@ export default {
 					navy: 'hsl(var(--grademate-navy))',
 					cyan: 'hsl(var(--grademate-cyan))',
 					'cyan-glow': 'hsl(var(--grademate-cyan-glow))',
+					green: 'hsl(var(--grademate-green))',
 					text: 'hsl(var(--grademate-text))',
 					'text-muted': 'hsl(var(--grademate-text-muted))'
 				},

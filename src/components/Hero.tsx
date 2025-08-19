@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,9 +25,11 @@ const Hero = () => {
 
         {/* CTA Button */}
         <div className="pt-4">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            GET STARTED
-          </Button>
+          <Link to="/auth">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              GET STARTED
+            </Button>
+          </Link>
         </div>
       </div>
     </main>

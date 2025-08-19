@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -6,9 +7,11 @@ const Header = () => {
       <div className="text-2xl md:text-3xl font-bold text-foreground">
         GM
       </div>
-      <Button variant="outline-cyan" size="sm" className="text-sm md:text-base">
-        LOGIN / SIGNUP
-      </Button>
+      <Link to="/auth">
+        <Button variant="outline-cyan" size="sm" className="text-sm md:text-base">
+          LOGIN / SIGNUP
+        </Button>
+      </Link>
     </header>
   );
 };
