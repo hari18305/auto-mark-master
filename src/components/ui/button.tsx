@@ -21,6 +21,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[var(--glow-cyan)] hover:shadow-[0_0_40px_hsl(var(--grademate-cyan)/0.4)] transition-all duration-300 font-semibold",
         "outline-cyan": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300",
+        "dashboard-blue": "bg-blue-600 hover:bg-blue-700 text-yellow-400 font-bold text-lg rounded-3xl h-20 w-full shadow-lg transition-all duration-300",
+        "course-card": "bg-grademate-green hover:bg-grademate-green/90 text-grademate-navy font-bold rounded-3xl h-24 w-full shadow-lg transition-all duration-300 flex flex-col justify-center",
       },
       size: {
         default: "h-10 px-4 py-2",
