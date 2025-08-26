@@ -1,18 +1,26 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginSignup = () => {
   const [userType, setUserType] = useState<"student" | "teacher">("student");
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login/signup logic here
     console.log({ userType, isLogin, email, password });
+    
+    // Navigate to appropriate dashboard based on user type
+    if (userType === "student") {
+      navigate("/student-dashboard");
+    } else {
+      navigate("/teacher-dashboard");
+    }
   };
 
   return (

@@ -11,6 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         "login-green": "bg-grademate-green text-grademate-navy hover:bg-grademate-green/90 font-semibold rounded-full",
+        "dashboard-blue": "bg-blue-600 text-white hover:bg-blue-700 font-semibold rounded-lg transition-all duration-300",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
