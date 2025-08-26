@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LoginSignup = () => {
-  const navigate = useNavigate();
   const [userType, setUserType] = useState<"student" | "teacher">("student");
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
@@ -14,13 +13,6 @@ const LoginSignup = () => {
     e.preventDefault();
     // Handle login/signup logic here
     console.log({ userType, isLogin, email, password });
-    
-    // Redirect based on user type
-    if (userType === "student") {
-      navigate("/student");
-    } else {
-      navigate("/teacher");
-    }
   };
 
   return (
